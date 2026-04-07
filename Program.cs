@@ -17,7 +17,7 @@ namespace SimpleCalculator
                 return;
             }
 
-            Console.Write("Enter an operator (+, -, *, /): ");
+            Console.Write("Enter an operator (+, -, *, /, %): ");
             string op = Console.ReadLine();
 
             Console.Write("Enter the second number: ");
@@ -51,6 +51,9 @@ namespace SimpleCalculator
                     {
                         Console.WriteLine($"{num1} / {num2} = {num1 / num2}");
                     }
+                    break;
+                case "%":
+                    Console.WriteLine($"{num1} % {num2} = {num1 % num2}");
                     break;
                 default:
                     Console.WriteLine("Error: Invalid operator selected.");
